@@ -1,0 +1,2 @@
+These are two websites complete code I created with the help of ChatGPT, using HTML, CSS, and JavaScript.
+These projects helped me gain more practical experience and strengthen my frontend development skills.
