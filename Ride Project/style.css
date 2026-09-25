@@ -1,0 +1,601 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f5;
+    color: #171717;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+header ul a {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+header ul a:hover {
+    color: #000;
+}
+
+.nav-btn {
+    background-color: #111;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+    min-height: 650px;
+
+    margin: auto;
+    padding: 80px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+
+    animation: heroText 1s ease forwards;
+}
+
+.small-heading {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    max-width: 500px;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    background-color: #111;
+    color: white;
+
+    padding: 15px 30px;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   HERO VEHICLE
+========================= */
+
+.hero-vehicle {
+    width: 380px;
+    height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: vehicleFloat 3s ease-in-out infinite;
+}
+
+.vehicle-circle {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background-color: #e7e7e2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 130px;
+
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.section-heading h2 {
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1;
+}
+
+
+/* =========================
+   RIDES
+========================= */
+
+.rides {
+    padding: 120px 30px;
+    background-color: white;
+}
+
+.ride-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.ride-card {
+    padding: 40px 30px;
+
+    background-color: #f7f7f5;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.ride-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.ride-card.active {
+    border-color: #111;
+    transform: translateY(-8px);
+}
+
+.ride-icon {
+    font-size: 60px;
+    margin-bottom: 25px;
+
+    transition: transform 0.4s ease;
+}
+
+.ride-card:hover .ride-icon {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.ride-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.ride-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.ride-card span {
+    font-weight: bold;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 30px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.steps article {
+    padding: 30px;
+    border-top: 1px solid #ccc;
+
+    transition: transform 0.4s ease;
+}
+
+.steps article:hover {
+    transform: translateY(-8px);
+}
+
+.step-number {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.steps h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.steps p {
+    color: #666;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking {
+    padding: 100px 30px;
+    background-color: #111;
+    color: white;
+}
+
+.booking-box {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+.booking-box > div > p:first-child {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.booking-box h2 {
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.booking-box > div > p:last-child {
+    color: #aaa;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#booking-form label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#booking-form input {
+    padding: 15px;
+
+    border: 1px solid #444;
+    border-radius: 8px;
+
+    background-color: #222;
+    color: white;
+
+    outline: none;
+}
+
+#booking-form input:focus {
+    border-color: white;
+}
+
+#booking-form button {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: white;
+    color: #111;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+#booking-form button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    max-width: 900px;
+    margin: auto;
+
+    padding: 120px 30px;
+
+    text-align: center;
+}
+
+.about > div > p:first-child {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.about h2 {
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.about > div > p:last-child {
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #111;
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 30px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer > p {
+    color: #888;
+}
+
+footer nav {
+    margin: 25px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+footer nav a {
+    color: #aaa;
+}
+
+footer nav a:hover {
+    color: white;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes heroText {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes vehicleFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    header ul {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        letter-spacing: -3px;
+    }
+
+    .hero-vehicle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .vehicle-circle {
+        width: 230px;
+        height: 230px;
+        font-size: 90px;
+    }
+
+    .ride-container,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-box {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .booking-box h2 {
+        font-size: 45px;
+    }
+
+    .about h2 {
+        font-size: 45px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    header nav {
+        padding: 15px 20px;
+    }
+
+    .nav-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+    .rides,
+    .how-it-works,
+    .about {
+        padding: 80px 20px;
+    }
+
+}

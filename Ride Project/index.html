@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RideNow - Book Your Ride</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav>
+
+            <h1>RideNow</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rides">Rides</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <a href="#booking" class="nav-btn">
+                Book Ride
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="small-heading">
+                    FAST • SAFE • AFFORDABLE
+                </p>
+
+                <h2>
+                    Your Ride,<br>
+                    Your Way.
+                </h2>
+
+                <p class="hero-text">
+                    Book a bike, car or auto in just a few clicks.
+                    Get where you need to go without the hassle.
+                </p>
+
+                <a href="#booking" class="hero-btn">
+                    Book a Ride
+                </a>
+
+            </div>
+
+
+            <div class="hero-vehicle">
+
+                <div class="vehicle-circle">
+                    🚗
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RIDES ================= -->
+
+        <section class="rides" id="rides">
+
+            <div class="section-heading">
+
+                <p>
+                    CHOOSE YOUR RIDE
+                </p>
+
+                <h2>
+                    Find the right ride for you
+                </h2>
+
+            </div>
+
+
+            <div class="ride-container">
+
+
+                <article class="ride-card" data-ride="Bike">
+
+                    <div class="ride-icon">
+                        🏍️
+                    </div>
+
+                    <h3>
+                        Bike
+                    </h3>
+
+                    <p>
+                        Quick and affordable for solo rides.
+                    </p>
+
+                    <span>
+                        Starting ₹49
+                    </span>
+
+                </article>
+
+
+                <article class="ride-card active" data-ride="Car">
+
+                    <div class="ride-icon">
+                        🚗
+                    </div>
+
+                    <h3>
+                        Car
+                    </h3>
+
+                    <p>
+                        Comfortable rides for everyday travel.
+                    </p>
+
+                    <span>
+                        Starting ₹99
+                    </span>
+
+                </article>
+
+
+                <article class="ride-card" data-ride="Auto">
+
+                    <div class="ride-icon">
+                        🛺
+                    </div>
+
+                    <h3>
+                        Auto
+                    </h3>
+
+                    <p>
+                        Affordable rides for short distances.
+                    </p>
+
+                    <span>
+                        Starting ₹69
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how-it-works" id="how-it-works">
+
+            <div class="section-heading">
+
+                <p>
+                    SIMPLE PROCESS
+                </p>
+
+                <h2>
+                    How it works
+                </h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <article>
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Choose your ride
+                    </h3>
+
+                    <p>
+                        Select a bike, car or auto according to your needs.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Enter location
+                    </h3>
+
+                    <p>
+                        Tell us where you want to go.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Book your ride
+                    </h3>
+
+                    <p>
+                        Confirm your booking and enjoy your ride.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOOKING ================= -->
+
+        <section class="booking" id="booking">
+
+            <div class="booking-box">
+
+                <div>
+
+                    <p>
+                        READY TO GO?
+                    </p>
+
+                    <h2>
+                        Book your ride now.
+                    </h2>
+
+                    <p>
+                        Select your ride and enter your pickup location.
+                    </p>
+
+                </div>
+
+
+                <form id="booking-form">
+
+                    <label for="pickup">
+                        Pickup Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pickup"
+                        placeholder="Enter pickup location"
+                        required
+                    >
+
+
+                    <label for="destination">
+                        Destination
+                    </label>
+
+                    <input
+                        type="text"
+                        id="destination"
+                        placeholder="Enter destination"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Confirm Ride
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div>
+
+                <p>
+                    ABOUT RIDENOW
+                </p>
+
+                <h2>
+                    Making everyday travel simple.
+                </h2>
+
+                <p>
+                    RideNow helps customers find convenient,
+                    affordable and reliable rides whenever they
+                    need them.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+            RideNow
+        </h2>
+
+        <p>
+            Your ride. Your way.
+        </p>
+
+        <nav>
+
+            <a href="#home">Home</a>
+            <a href="#rides">Rides</a>
+            <a href="#about">About</a>
+
+        </nav>
+
+        <p>
+            &copy; 2026 RideNow. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
