@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Food Ordering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    
+    <header>
+
+        <nav>
+
+            <h1>Foodie</h1>
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <a href="#">Cart</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section>
+
+            <h2>
+                Delicious Food, Delivered Fast
+            </h2>
+
+            <p>
+                Order your favorite meals from the best restaurants
+                and enjoy them at your doorstep.
+            </p>
+
+            <a href="#">
+                Order Now
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             FOOD CATEGORIES
+        ========================== -->
+
+        <section>
+
+            <h2>
+                Food Categories
+            </h2>
+
+            <div>
+
+                <article>
+
+                    <h3>
+                        Pizza
+                    </h3>
+
+                    <p>
+                        Cheesy and delicious pizzas
+                    </p>
+
+                    <a href="#">
+                        Explore Pizza
+                    </a>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Burgers
+                    </h3>
+
+                    <p>
+                        Juicy burgers with fresh ingredients
+                    </p>
+
+                    <a href="#">
+                        Explore Burgers
+                    </a>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Biryani
+                    </h3>
+
+                    <p>
+                        Authentic and flavorful biryani
+                    </p>
+
+                    <a href="#">
+                        Explore Biryani
+                    </a>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Desserts
+                    </h3>
+
+                    <p>
+                        Sweet treats for every occasion
+                    </p>
+
+                    <a href="#">
+                        Explore Desserts
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             POPULAR DISHES
+        ========================== -->
+
+        <section>
+
+            <h2>
+                Popular Dishes
+            </h2>
+
+            <div>
+
+
+                <!-- Pizza -->
+
+                <article data-id="1">
+
+                    <h3>
+                        Margherita Pizza
+                    </h3>
+
+                    <p>
+                        Classic pizza with tomato, cheese and basil.
+                    </p>
+
+                    <p>
+                        ₹299
+                    </p>
+
+                    <button class="add-to-cart">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <!-- Burger -->
+
+                <article data-id="2">
+
+                    <h3>
+                        Cheese Burger
+                    </h3>
+
+                    <p>
+                        Juicy burger with cheese and fresh vegetables.
+                    </p>
+
+                    <p>
+                        ₹199
+                    </p>
+
+                    <button class="add-to-cart">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <!-- Biryani -->
+
+                <article data-id="3">
+
+                    <h3>
+                        Chicken Biryani
+                    </h3>
+
+                    <p>
+                        Fragrant rice cooked with spicy chicken.
+                    </p>
+
+                    <p>
+                        ₹249
+                    </p>
+
+                    <button class="add-to-cart">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <!-- Cake -->
+
+                <article data-id="4">
+
+                    <h3>
+                        Chocolate Cake
+                    </h3>
+
+                    <p>
+                        Rich and delicious chocolate cake.
+                    </p>
+
+                    <p>
+                        ₹149
+                    </p>
+
+                    <button class="add-to-cart">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CART
+        ========================== -->
+
+        <section>
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <div id="cart-items">
+            </div>
+
+            <h3>
+                Total: ₹<span id="cart-total">0</span>
+            </h3>
+
+            <button id="clear-cart">
+                Clear Cart
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h2>
+            Foodie
+        </h2>
+
+        <p>
+            Delicious food delivered straight to your doorstep.
+        </p>
+
+
+        <nav>
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#">
+                Menu
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <p>
+            &copy; 2026 Foodie. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
